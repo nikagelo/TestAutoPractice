@@ -19,8 +19,10 @@ public class MainPage {
     itemColor = $(byClassName("choose_color")),
     itemID = $(byClassName("item_id")),
     itemNum = $(byName("quantity")),
-    itemPrice = $(byClassName("prod_price")),
-    itemFullPrice = $(byClassName("fullPriceFor"));
+    itemPrice = $(byXpath("/html/body/div[5]/div/div[3]/div[6]/div[2]/span[1]")),
+    itemFullPrice = $(byClassName("fullPriceFor")),
+    plusBtn = $(byClassName("fa-plus"));
+
 
 
 

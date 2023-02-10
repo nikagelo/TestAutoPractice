@@ -3,6 +3,7 @@ package StepObject;
 import PageObject.MainPage;
 import com.codeborne.selenide.Condition;
 import org.example.Main;
+import org.testng.Assert;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -63,5 +64,28 @@ public class MainPageSteps extends MainPage {
         itemFullPrice.shouldNotBe(Condition.empty);
         return this;
     }
+    public MainPageSteps addNum(Integer num){
+        for (int i=0; i<num; i++){
+            plusBtn.click();
+        }
+        return this;
+    }
+//    public MainPageSteps checkMultipliedPrice(Integer num){
+//        String itemPriceString = itemPrice.getValue();
+//        int itemPriceInt = Integer.parseInt(itemPriceString);
+//        String itemMultipliedString = itemFullPrice.getValue();
+//        int itemMultipliedInt=Integer.parseInt(itemMultipliedString);
+//        Assert.assertEquals(itemPriceInt*num, itemMultipliedInt);
+//        return this;
+//
+//    }
+    public double price(){
+        return Double.parseDouble(String.valueOf(itemPrice.getOwnText()));
+    }
+
+    public double multipliedPrice(){
+        return Double.parseDouble(String.valueOf(itemFullPrice.getOwnText()));
+    }
+
 
 }
