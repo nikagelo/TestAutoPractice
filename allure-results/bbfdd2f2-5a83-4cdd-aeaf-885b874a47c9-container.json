@@ -1,0 +1,1 @@
+{"uuid":"bbfdd2f2-5a83-4cdd-aeaf-885b874a47c9","name":"TestAutoPractice","children":["4cfc9108-f4af-47c4-bb2d-83cb5e0dc9f9"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1675946664579,"stop":1675946669216}],"afters":[],"start":1675946664543,"stop":1675946670121}
